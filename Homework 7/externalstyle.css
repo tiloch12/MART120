@@ -1,0 +1,12 @@
+.newPageLink{
+    color:goldenrod;
+    text-decoration: underline;
+    font-weight:lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+#parenthInfo{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
