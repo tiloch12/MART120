@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body style= "background-color:lightcyan">
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact Me</h1>
+        <br />
+        <p>Please fill out the form to get in touch!</p>
+        <form type="Post">
+            *First Name: <br><input type="text" id="fName"><br>
+            *Last Name: <br><input type="text" id="lName"><br>
+            *Email: <br><input type="text" id="email"><br>
+            <br />
+            <input type="checkbox" id=agreementTermsTrue name="agreementTermsTrue" value="agreementTermsTrue"> I accept the terms and conditions (see below).*<br>
+        </form>
+        <button class="btn btn-info" onclick='checkBoxes(), checkTerms();'>Submit</button><br>
+        <br />
+        <p>* = required</p>
+        <p><b>Terms and Conditions:</b></p>
+        <p>You must be over 0 years of age and have a name and email in order to submit this contact form. <br> You legally agree that as of 10/11/21, this form will not take you anywhere upon clicking the submit button.</p>
+        <br />
+        <br />
+        <a style="color:goldenrod; text-decoration: underline;" href="homepage.html">Go Back to Home Page</a>
+        <br />
+        <br />
+        <a style="color:goldenrod; text-decoration: underline;" href="page2.html">Go Back to Art and Writing Page</a>
+        <script>
+            function checkBoxes()
+            {
+                var eMail = document.getElementById("email").value;
+                if(eMail == "") 
+                {
+                    document.getElementById("email").style.backgroundColor = "red";
+                    document.getElementById("email").style.color = "white";
+                    document.getElementById("email").focus();
+                }
+                else
+                {
+                    document.getElementById("email").style.backgroundColor = "white";
+                    document.getElementById("email").style.color = "black";
+                }
+                var lastName = document.getElementById("lName").value;
+                if(lastName == "") 
+                {
+                    document.getElementById("lName").style.backgroundColor = "red";
+                    document.getElementById("lName").style.color = "white";
+                    document.getElementById("lName").focus();
+                }
+                else
+                {
+                    document.getElementById("lName").style.backgroundColor = "white";
+                    document.getElementById("lName").style.color = "black";
+                }
+                var firstName = document.getElementById("fName").value;
+                if(firstName == "") 
+                {
+                    document.getElementById("fName").style.backgroundColor = "red";
+                    document.getElementById("fName").style.color = "white";
+                    document.getElementById("fName").focus();
+                }
+                else
+                {
+                    document.getElementById("fName").style.backgroundColor = "white";
+                    document.getElementById("fName").style.color = "black";
+                }
+            }
+            function checkTerms()
+            { 
+                var Terms = document.getElementById("agreementTermsTrue");
+                if(Terms.checked==false) 
+                {
+                    window.alert("Please agree to the Terms and Conditions before continuing.");
+                }
+            }
+        </script>
+    </body>
+</html>
