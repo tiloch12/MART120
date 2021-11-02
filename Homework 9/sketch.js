@@ -4,8 +4,9 @@ function setup()
     }
     function draw()
     {
-      //back hair
       background(138, 166, 191);
+
+      //back of hair
       strokeWeight(1);
         fill(219, 195, 121);
         stroke(161, 135, 56);
