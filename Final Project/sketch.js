@@ -115,7 +115,9 @@ function backdrop()
   text("can basically teleport, so watch out.", 167, 97);
   text("Luckily, you can both fly, and you can", 167, 109);
   text("even teleport a little bit too, to opposite", 167, 121);
-  text("sides of the room. Good luck!", 167, 133);
+  text("sides of the room. Good luck! Use ", 167, 133);
+  text("WASD to move when the mouse", 167, 145);
+  text("escapes.", 167, 157);
 }
 
 //optional mouse coordinates
